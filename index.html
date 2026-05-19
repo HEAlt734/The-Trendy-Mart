@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>T-Shirt Store</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body{
+      background:#f4f4f4;
+    }
+
+    header{
+      background:#111;
+      color:white;
+      padding:20px;
+      text-align:center;
+    }
+
+    header h1{
+      font-size:40px;
+    }
+
+    nav{
+      background:#222;
+      padding:15px;
+      text-align:center;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin:0 15px;
+      font-size:18px;
+    }
+
+    nav a:hover{
+      color:orange;
+    }
+
+    .hero{
+      height:400px;
+      background:url('https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?q=80&w=1200&auto=format&fit=crop') center/cover;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      color:white;
+      text-align:center;
+    }
+
+    .hero h2{
+      font-size:50px;
+      background:rgba(0,0,0,0.6);
+      padding:20px;
+      border-radius:10px;
+    }
+
+    .products{
+      padding:50px;
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:30px;
+    }
+
+    .card{
+      background:white;
+      border-radius:10px;
+      overflow:hidden;
+      box-shadow:0 5px 10px rgba(0,0,0,0.2);
+      transition:0.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-10px);
+    }
+
+    .card img{
+      width:100%;
+      height:300px;
+      object-fit:cover;
+    }
+
+    .card-content{
+      padding:20px;
+      text-align:center;
+    }
+
+    .card-content h3{
+      margin-bottom:10px;
+    }
+
+    .price{
+      color:green;
+      font-size:22px;
+      margin-bottom:15px;
+    }
+
+    button{
+      background:#111;
+      color:white;
+      border:none;
+      padding:12px 20px;
+      cursor:pointer;
+      border-radius:5px;
+      font-size:16px;
+    }
+
+    button:hover{
+      background:orange;
+    }
+
+    footer{
+      background:#111;
+      color:white;
+      text-align:center;
+      padding:20px;
+      margin-top:40px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Cool T-Shirt Store</h1>
+    <p>Best T-Shirts for Fashion Lovers</p>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Shop</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <section class="hero">
+    <h2>New Collection 2026</h2>
+  </section>
+
+  <section class="products">
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1503341504253-dff4815485f1?q=80&w=800&auto=format&fit=crop" alt="Tshirt">
+      <div class="card-content">
+        <h3>Black Stylish T-Shirt</h3>
+        <p class="price">$25</p>
+        <button onclick="buyNow()">Buy Now</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1523398002811-999ca8dec234?q=80&w=800&auto=format&fit=crop" alt="Tshirt">
+      <div class="card-content">
+        <h3>White Casual T-Shirt</h3>
+        <p class="price">$20</p>
+        <button onclick="buyNow()">Buy Now</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=800&auto=format&fit=crop" alt="Tshirt">
+      <div class="card-content">
+        <h3>Premium Fashion Tee</h3>
+        <p class="price">$30</p>
+        <button onclick="buyNow()">Buy Now</button>
+      </div>
+    </div>
+
+  </section>
+
+  <footer>
+    <p>© 2026 Cool T-Shirt Store | All Rights Reserved</p>
+  </footer>
+
+  <script>
+    function buyNow(){
+      alert("Thanks for shopping with us!");
+    }
+  </script>
+
+</body>
+</html>
